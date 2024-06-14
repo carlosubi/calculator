@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savings Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator">
+        <h1><center>Savings Calculator</center></h1>
+	<center><small> More than half of professionals Ubiminds within Ubiminds talent pool have at least 7 years of experience.</small></center> 
+        <div id="jobRolesContainer">
+            <table id="rolesTable">
+                <thead>
+                    <tr>
+                        <th>Role</th>
+                        <th>Number of Professionals</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Rows will be added dynamically here -->
+                </tbody>
+            </table>
+        </div>
+        <button onclick="calculateSavings()">Calculate Savings</button>
+        <div id="results">
+            <p><span id="savingsResult"></span></p>
+        </div>
+        <script src="calculator.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                populateRoleTable();
+            });
+        </script>
+    </div>
+</body>
+</html>
